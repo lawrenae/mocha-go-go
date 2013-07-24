@@ -23,7 +23,7 @@
 
     <target name="mocha-jenkins" description="Test framework">
         <echo message="Installing Deps ..." />
-        <exec executable="npm" failonerror="true">
+        <exec executable="npm.cmd" failonerror="true">
         <env key="NODE_PATH" value="/tmp/node_modules/" />
             <arg value="install" />
         </exec>
